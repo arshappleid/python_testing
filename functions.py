@@ -1,5 +1,6 @@
 ## all the functions that we create, or would want to use for our project. Would be added here.
 import math
+import json
 
 
 def add(num1, num2): ## will return int type
@@ -27,9 +28,14 @@ def write_file(writeStr , fileName):
 	## this will write the writeStr to the fileName. 
 	## here fileName is supposed to be be the dynamic address to the file.
 	try:
-		file = open(fileName,'w')
-		file.write(writeStr)
-		file.close()
+		if(type(writeStr) is dict):
+			with open(fileName, 'w') as json_file:
+  				json.dump(response_data, json_file)
+			json_file.close();
+		else:
+			file = open(fileName,'w')
+			file.write(writeStr)
+			file.close()
 	except Exception as e:
 		print(e)
 		print("Could not write to file.")

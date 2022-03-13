@@ -1,0 +1,78 @@
+{
+	"url": "https://api.github.com/gists/8603a7a2d9f4c076d6c0b52af70a1360",
+	"forks_url": "https://api.github.com/gists/8603a7a2d9f4c076d6c0b52af70a1360/forks",
+	"commits_url": "https://api.github.com/gists/8603a7a2d9f4c076d6c0b52af70a1360/commits",
+	"id": "8603a7a2d9f4c076d6c0b52af70a1360",
+	"node_id": "G_kwDOBBTnetoAIDg2MDNhN2EyZDlmNGMwNzZkNmMwYjUyYWY3MGExMzYw",
+	"git_pull_url": "https://gist.github.com/8603a7a2d9f4c076d6c0b52af70a1360.git",
+	"git_push_url": "https://gist.github.com/8603a7a2d9f4c076d6c0b52af70a1360.git",
+	"html_url": "https://gist.github.com/8603a7a2d9f4c076d6c0b52af70a1360",
+	"files": {
+		"functions.py": {
+			"filename": "functions.py",
+			"type": "application/x-python",
+			"language": "Python",
+			"raw_url": "https://gist.githubusercontent.com/arshappleid/8603a7a2d9f4c076d6c0b52af70a1360/raw/80aa92dbc38865d4b9a93765620870e09dd77425/functions.py",
+			"size": 868,
+			"truncated": false,
+			"content": "## all the functions that we create, or would want to use for our project. Would be added here.\nimport math\n\n\ndef add(num1, num2): ## will return int type\n\treturn (num1+num2);\n\ndef add_Strings(str1,str2): ## will return string\n\treturn (str1+\" \"+str2);\n\ndef read_file(fileName):\n\t## will return the data in a file as a string\n\ttry:\n\t\tfile = open(fileName,'r')\n\t\tline = file.readline()\n\t\tdata = \"\";\n\t\twhile line:\n\t\t\tdata += line\n\t\t\tline = file.readline()\n\t\tfile.close()\n\t\treturn data;\n\texcept Exception as e:\n\t\tprint(e)\n\t\treturn \"Could not read from file\"\n\ndef write_file(writeStr , fileName):\n\t## this will write the writeStr to the fileName. \n\t## here fileName is supposed to be be the dynamic address to the file.\n\ttry:\n\t\tfile = open(fileName,'w')\n\t\tfile.write(writeStr)\n\t\tfile.close()\n\texcept Exception as e:\n\t\tprint(e)\n\t\tprint(\"Could not write to file.\")\n\n\n\n\n\n\n\n\n\t\n"
+		}
+	},
+	"public": true,
+	"created_at": "2022-03-13T21:39:53Z",
+	"updated_at": "2022-03-13T21:39:53Z",
+	"description": null,
+	"comments": 0,
+	"user": null,
+	"comments_url": "https://api.github.com/gists/8603a7a2d9f4c076d6c0b52af70a1360/comments",
+	"owner": {
+		"login": "arshappleid",
+		"id": 68478842,
+		"node_id": "MDQ6VXNlcjY4NDc4ODQy",
+		"avatar_url": "https://avatars.githubusercontent.com/u/68478842?v=4",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/arshappleid",
+		"html_url": "https://github.com/arshappleid",
+		"followers_url": "https://api.github.com/users/arshappleid/followers",
+		"following_url": "https://api.github.com/users/arshappleid/following{/other_user}",
+		"gists_url": "https://api.github.com/users/arshappleid/gists{/gist_id}",
+		"starred_url": "https://api.github.com/users/arshappleid/starred{/owner}{/repo}",
+		"subscriptions_url": "https://api.github.com/users/arshappleid/subscriptions",
+		"organizations_url": "https://api.github.com/users/arshappleid/orgs",
+		"repos_url": "https://api.github.com/users/arshappleid/repos",
+		"events_url": "https://api.github.com/users/arshappleid/events{/privacy}",
+		"received_events_url": "https://api.github.com/users/arshappleid/received_events",
+		"type": "User",
+		"site_admin": false
+	},
+	"forks": [],
+	"history": [
+		{
+			"user": {
+				"login": "arshappleid",
+				"id": 68478842,
+				"node_id": "MDQ6VXNlcjY4NDc4ODQy",
+				"avatar_url": "https://avatars.githubusercontent.com/u/68478842?v=4",
+				"gravatar_id": "",
+				"url": "https://api.github.com/users/arshappleid",
+				"html_url": "https://github.com/arshappleid",
+				"followers_url": "https://api.github.com/users/arshappleid/followers",
+				"following_url": "https://api.github.com/users/arshappleid/following{/other_user}",
+				"gists_url": "https://api.github.com/users/arshappleid/gists{/gist_id}",
+				"starred_url": "https://api.github.com/users/arshappleid/starred{/owner}{/repo}",
+				"subscriptions_url": "https://api.github.com/users/arshappleid/subscriptions",
+				"organizations_url": "https://api.github.com/users/arshappleid/orgs",
+				"repos_url": "https://api.github.com/users/arshappleid/repos",
+				"events_url": "https://api.github.com/users/arshappleid/events{/privacy}",
+				"received_events_url": "https://api.github.com/users/arshappleid/received_events",
+				"type": "User",
+				"site_admin": false
+			},
+			"version": "f440803ba67b31fc549e5666bfcbde70c52eeca7",
+			"committed_at": "2022-03-13T21:39:53Z",
+			"change_status": { "total": 44, "additions": 44, "deletions": 0 },
+			"url": "https://api.github.com/gists/8603a7a2d9f4c076d6c0b52af70a1360/f440803ba67b31fc549e5666bfcbde70c52eeca7"
+		}
+	],
+	"truncated": false
+}
