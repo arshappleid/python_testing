@@ -30,7 +30,7 @@ def write_file(writeStr , fileName):
 	try:
 		if(type(writeStr) is dict):
 			with open(fileName, 'w') as json_file:
-  				json.dump(response_data, json_file)
+  				json.dump(writeStr, json_file)
 			json_file.close();
 		else:
 			file = open(fileName,'w')
