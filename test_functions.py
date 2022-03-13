@@ -24,3 +24,14 @@ def test_add_Strings():
 	str1 = "!@#$%^&"
 	str2 = "*()"
 	assert add_Strings(str1, str2) == "!@#$%^& *()"
+
+def test_write_file():
+	writeStr = "UBC IRP Student QA!"
+	write_file(writeStr, "testFile1.txt")
+	fileData = ("testFile1.txt")
+	assert read_file(fileName) == writeStr
+
+	writeStr = "How was your Day"
+	write_file(writeStr, "testFile2.txt")
+	fileData = ("testFile2.txt")
+	assert read_file(fileName) == writeStr
