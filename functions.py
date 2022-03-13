@@ -12,12 +12,13 @@ def read_file(fileName):
 	## will return the data in a file as a string
 	try:
 		file = open(fileName)
-		line = myfile.readline()
+		line = file.readline()
 		data = "";
 		while line:
-			data += myline
-			line = myfile.readline()
+			data += line
+			line = file.readline()
 		file.close()
+		return data;
 	except:
 		return "Could not read from file"
 
