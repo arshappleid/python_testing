@@ -18,7 +18,7 @@ def read_file(fileName):
 			data += myline
 			line = myfile.readline()
 		file.close()
-	expect:
+	except:
 		return "Could not read from file"
 
 def write_file(writeStr , fileName):
