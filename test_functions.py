@@ -26,12 +26,12 @@ def test_add_Strings():
 	assert add_Strings(str1, str2) == "!@#$%^& *()"
 
 def test_write_file():
+	fileName = "testFile1.txt"
 	writeStr = "UBC IRP Student QA!"
-	write_file(writeStr, "testFile1.txt")
-	fileData = ("testFile1.txt")
+	write_file(writeStr, fileName)
 	assert read_file(fileName) == writeStr
 
+	fileName = "testFile2.txt"
 	writeStr = "How was your Day"
-	write_file(writeStr, "testFile2.txt")
-	fileData = ("testFile2.txt")
+	write_file(writeStr, fileName)
 	assert read_file(fileName) == writeStr
