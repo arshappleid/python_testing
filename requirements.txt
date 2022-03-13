@@ -1,4 +1,3 @@
 gistyc
-json
 pytest
 mypy
