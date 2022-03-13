@@ -11,7 +11,7 @@ def add_Strings(str1,str2): ## will return string
 def read_file(fileName):
 	## will return the data in a file as a string
 	try:
-		file = open(fileName)
+		file = open(fileName,'r')
 		line = file.readline()
 		data = "";
 		while line:
@@ -19,17 +19,19 @@ def read_file(fileName):
 			line = file.readline()
 		file.close()
 		return data;
-	except:
+	except Exception as e:
+		print(e)
 		return "Could not read from file"
 
 def write_file(writeStr , fileName):
 	## this will write the writeStr to the fileName. 
 	## here fileName is supposed to be be the dynamic address to the file.
 	try:
-		file = open(fileName)
+		file = open(fileName,'w')
 		file.write(writeStr)
 		file.close()
-	except:
+	except Exception as e:
+		print(e)
 		print("Could not write to file.")
 
 
