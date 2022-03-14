@@ -12,7 +12,6 @@ def test_add():
 
 def test_add_Strings():
 	## we expect our original function to add a 1 space between the two strings given.
-
 	str1 = "HELLO"
 	str2 = "WORLD"
 	assert add_Strings(str1, str2) == "HELLO WORLD"

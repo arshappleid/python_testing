@@ -1,7 +1,7 @@
 from functions import *;
 from github_functions import *;
 
-import test_github_functions
+file_name = "./text_files/testFile1.txt"
 
-test_create_gist()
-
+response = create_gist(file_name)
+print(response)
